@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Style
-        run: npm run format:check
-
       - name: Check out code
         uses: actions/checkout@v4
 
@@ -23,6 +20,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Style
+        run: npm run format:check
 
       - name: Force Failure
         run: npm run test -- --coverage
