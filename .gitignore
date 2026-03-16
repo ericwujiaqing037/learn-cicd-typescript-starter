@@ -4,3 +4,5 @@ dist/
 .env
 .vscode
 node_modules
+google-cloud-cli-darwin-arm.tar.gz
+google-cloud-sdk/
