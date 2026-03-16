@@ -27,6 +27,9 @@ jobs:
       - name: build App
         run: npm run build
 
+      - name: migrate database
+        run: npm run db:migrate
+
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
